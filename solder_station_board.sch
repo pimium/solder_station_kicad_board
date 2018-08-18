@@ -1187,31 +1187,9 @@ FBA
 Wire Wire Line
 	9200 5700 8900 5700
 Wire Wire Line
-	9200 6050 8900 6050
-Text Label 9200 6050 2    50   ~ 0
+	9200 5800 8900 5800
+Text Label 9200 5800 2    50   ~ 0
 FBB
-$Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 5B5F78C9
-P 8700 5700
-F 0 "J2" H 8620 5475 50  0000 C CNN
-F 1 "Conn_FBA" H 8620 5566 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8700 5700 50  0001 C CNN
-F 3 "~" H 8700 5700 50  0001 C CNN
-	1    8700 5700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 5B5F79C7
-P 8700 6050
-F 0 "J5" H 8620 5825 50  0000 C CNN
-F 1 "Conn_FBB" H 8620 5916 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8700 6050 50  0001 C CNN
-F 3 "~" H 8700 6050 50  0001 C CNN
-	1    8700 6050
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5B600371
@@ -1294,4 +1272,56 @@ Wire Wire Line
 	7600 6300 7600 6150
 Wire Wire Line
 	7600 6150 7450 6150
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5B62CB4A
+P 6100 6550
+F 0 "J6" H 6020 6225 50  0000 C CNN
+F 1 "PWR_15V" H 6020 6316 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 6100 6550 50  0001 C CNN
+F 3 "~" H 6100 6550 50  0001 C CNN
+	1    6100 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+15V #PWR0128
+U 1 1 5B62CCAC
+P 6500 6250
+F 0 "#PWR0128" H 6500 6100 50  0001 C CNN
+F 1 "+15V" H 6515 6423 50  0000 C CNN
+F 2 "" H 6500 6250 50  0001 C CNN
+F 3 "" H 6500 6250 50  0001 C CNN
+	1    6500 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5B62CDBA
+P 6500 6700
+F 0 "#PWR0129" H 6500 6450 50  0001 C CNN
+F 1 "GND" H 6505 6527 50  0000 C CNN
+F 2 "" H 6500 6700 50  0001 C CNN
+F 3 "" H 6500 6700 50  0001 C CNN
+	1    6500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6700 6500 6550
+Wire Wire Line
+	6500 6550 6300 6550
+Wire Wire Line
+	6300 6450 6500 6450
+Wire Wire Line
+	6500 6450 6500 6250
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5B63F99D
+P 8700 5800
+F 0 "J2" H 8620 5475 50  0000 C CNN
+F 1 "Conn_FB" H 8620 5566 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8700 5800 50  0001 C CNN
+F 3 "~" H 8700 5800 50  0001 C CNN
+	1    8700 5800
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
