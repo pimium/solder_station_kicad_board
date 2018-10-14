@@ -939,9 +939,6 @@ NoConn ~ 6550 3750
 NoConn ~ 6550 3150
 NoConn ~ 6550 3250
 NoConn ~ 6550 3350
-NoConn ~ 6550 5450
-NoConn ~ 6550 5250
-NoConn ~ 6550 5350
 NoConn ~ 3050 -4000
 $Comp
 L atmel:ATMEGA168-20AU U6
@@ -1353,12 +1350,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5BC945DB
-P 5300 7300
-F 0 "J5" H 5380 7342 50  0000 L CNN
-F 1 "INPUT" H 5380 7251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5300 7300 50  0001 C CNN
-F 3 "~" H 5300 7300 50  0001 C CNN
-	1    5300 7300
+P 5250 6750
+F 0 "J5" H 5330 6792 50  0000 L CNN
+F 1 "INPUT" H 5330 6701 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5250 6750 50  0001 C CNN
+F 3 "~" H 5250 6750 50  0001 C CNN
+	1    5250 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1373,90 +1370,12 @@ Text Label 6900 5050 2    50   ~ 0
 INP2
 Text Label 6900 5150 2    50   ~ 0
 INP3
-Text Label 4250 7200 0    50   ~ 0
+Text Label 4550 6650 0    50   ~ 0
 INP1
-Text Label 4250 7300 0    50   ~ 0
+Text Label 4550 6750 0    50   ~ 0
 INP2
-Text Label 4250 7400 0    50   ~ 0
+Text Label 4550 6850 0    50   ~ 0
 INP3
-$Comp
-L power:+5V #PWR0131
-U 1 1 5BC9C22F
-P 4800 6400
-F 0 "#PWR0131" H 4800 6250 50  0001 C CNN
-F 1 "+5V" H 4815 6573 50  0000 C CNN
-F 2 "" H 4800 6400 50  0001 C CNN
-F 3 "" H 4800 6400 50  0001 C CNN
-	1    4800 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5BCB8FC7
-P 4650 6750
-F 0 "R1" H 4709 6796 50  0000 L CNN
-F 1 "1k" H 4709 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4650 6750 50  0001 C CNN
-F 3 "~" H 4650 6750 50  0001 C CNN
-	1    4650 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5BCC199B
-P 4800 6750
-F 0 "R2" H 4859 6796 50  0000 L CNN
-F 1 "1k" H 4859 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4800 6750 50  0001 C CNN
-F 3 "~" H 4800 6750 50  0001 C CNN
-	1    4800 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5BCC3B1E
-P 4950 6750
-F 0 "R3" H 5009 6796 50  0000 L CNN
-F 1 "1k" H 5009 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4950 6750 50  0001 C CNN
-F 3 "~" H 4950 6750 50  0001 C CNN
-	1    4950 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 6400 4800 6500
-Wire Wire Line
-	4800 6850 4800 7300
-Wire Wire Line
-	4250 7300 4800 7300
-Connection ~ 4800 7300
-Wire Wire Line
-	4250 7200 4650 7200
-Wire Wire Line
-	4650 6850 4650 7200
-Connection ~ 4650 7200
-Wire Wire Line
-	4650 6650 4650 6500
-Wire Wire Line
-	4650 6500 4800 6500
-Connection ~ 4800 6500
-Wire Wire Line
-	4800 6500 4800 6650
-Wire Wire Line
-	4800 6500 4950 6500
-Wire Wire Line
-	4950 6500 4950 6650
-Wire Wire Line
-	4650 7200 5100 7200
-Wire Wire Line
-	4800 7300 5100 7300
-Wire Wire Line
-	4250 7400 4950 7400
-Wire Wire Line
-	4950 6850 4950 7400
-Connection ~ 4950 7400
-Wire Wire Line
-	4950 7400 5100 7400
 $Comp
 L Connector_Generic:Conn_02x02_Top_Bottom J7
 U 1 1 5BE0A667
@@ -1508,4 +1427,84 @@ Wire Wire Line
 Wire Wire Line
 	6600 7250 6600 7350
 Connection ~ 6600 7350
+Wire Wire Line
+	4550 6750 5050 6750
+Wire Wire Line
+	4550 6650 5050 6650
+Wire Wire Line
+	4550 6850 5050 6850
+Wire Wire Line
+	6550 5250 6900 5250
+Wire Wire Line
+	6550 5350 6900 5350
+Wire Wire Line
+	6550 5450 6900 5450
+Text Label 6900 5250 2    50   ~ 0
+INP4
+Text Label 6900 5350 2    50   ~ 0
+INP5
+Text Label 6900 5450 2    50   ~ 0
+INP6
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5BF5FFB0
+P 5250 7250
+F 0 "J9" H 5330 7292 50  0000 L CNN
+F 1 "INPUT" H 5330 7201 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5250 7250 50  0001 C CNN
+F 3 "~" H 5250 7250 50  0001 C CNN
+	1    5250 7250
+	1    0    0    -1  
+$EndComp
+Text Label 4450 7150 0    50   ~ 0
+INP4
+Text Label 4450 7250 0    50   ~ 0
+INP5
+Text Label 4450 7350 0    50   ~ 0
+INP6
+Wire Wire Line
+	4450 7150 4700 7150
+$Comp
+L Device:R_Small R1
+U 1 1 5BF6D2C5
+P 4800 7150
+F 0 "R1" V 4750 7200 50  0000 L CNN
+F 1 "0" V 4800 7100 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4800 7150 50  0001 C CNN
+F 3 "~" H 4800 7150 50  0001 C CNN
+	1    4800 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 7150 5050 7150
+Wire Wire Line
+	4450 7250 4700 7250
+Wire Wire Line
+	4450 7350 4700 7350
+$Comp
+L Device:R_Small R2
+U 1 1 5BFCBE84
+P 4800 7250
+F 0 "R2" V 4750 7300 50  0000 L CNN
+F 1 "0" V 4800 7200 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4800 7250 50  0001 C CNN
+F 3 "~" H 4800 7250 50  0001 C CNN
+	1    4800 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 7250 5050 7250
+$Comp
+L Device:R_Small R3
+U 1 1 5BFCD156
+P 4800 7350
+F 0 "R3" V 4750 7400 50  0000 L CNN
+F 1 "0" V 4800 7300 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4800 7350 50  0001 C CNN
+F 3 "~" H 4800 7350 50  0001 C CNN
+	1    4800 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 7350 5050 7350
 $EndSCHEMATC
