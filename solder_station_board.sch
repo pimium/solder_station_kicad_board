@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:solder_station_board-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -192,7 +192,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 1600 4300 1600
 Wire Wire Line
-	4200 1600 4200 2000
+	4200 1600 4200 1700
 Wire Wire Line
 	4500 1000 4200 1000
 Wire Wire Line
@@ -461,7 +461,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 1700 5600 1700
 Wire Wire Line
-	5500 1700 5500 2100
+	5500 1700 5500 1800
 Wire Wire Line
 	5800 1100 5500 1100
 Wire Wire Line
@@ -717,7 +717,7 @@ U 1 1 5B6C81BF
 P 10550 3950
 F 0 "J4" H 10630 3942 50  0000 L CNN
 F 1 "VFD dISPLAY" H 10300 5700 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x34_P2.54mm_Vertical" H 10550 3950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x34_P2.54mm_Vertical_SMD_Pin1Right" H 10550 3950 50  0001 C CNN
 F 3 "~" H 10550 3950 50  0001 C CNN
 	1    10550 3950
 	1    0    0    -1  
@@ -738,13 +738,13 @@ Wire Wire Line
 	9950 5350 10350 5350
 Text Label 9950 5350 0    50   ~ 0
 S11
-Text Label 9950 4750 0    50   ~ 0
+Text Label 9950 5450 0    50   ~ 0
 S10
 Wire Wire Line
 	9950 5250 10350 5250
-Text Label 9950 4450 0    50   ~ 0
+Text Label 9950 4850 0    50   ~ 0
 1G
-Text Label 9950 4650 0    50   ~ 0
+Text Label 9950 5150 0    50   ~ 0
 S12
 Wire Wire Line
 	9950 5150 10350 5150
@@ -752,11 +752,11 @@ Wire Wire Line
 	10350 5050 9950 5050
 Wire Wire Line
 	9950 4950 10350 4950
-Text Label 9950 4350 0    50   ~ 0
+Text Label 9950 4950 0    50   ~ 0
 b
-Text Label 9950 4550 0    50   ~ 0
+Text Label 9950 5050 0    50   ~ 0
 a
-Text Label 9950 4850 0    50   ~ 0
+Text Label 9950 5250 0    50   ~ 0
 1G
 Wire Wire Line
 	9950 4850 10350 4850
@@ -806,11 +806,11 @@ Wire Wire Line
 	9950 4650 10350 4650
 Wire Wire Line
 	9950 4750 10350 4750
-Text Label 9950 4950 0    50   ~ 0
+Text Label 9950 4750 0    50   ~ 0
 c
-Text Label 9950 5050 0    50   ~ 0
+Text Label 9950 4650 0    50   ~ 0
 d
-Text Label 9950 5150 0    50   ~ 0
+Text Label 9950 4550 0    50   ~ 0
 2G
 Text Label 9950 2550 0    50   ~ 0
 S9
@@ -846,15 +846,15 @@ Text Label 9950 4150 0    50   ~ 0
 g
 Text Label 9950 4250 0    50   ~ 0
 3G
-Text Label 9950 5450 0    50   ~ 0
+Text Label 9950 4350 0    50   ~ 0
 f
-Text Label 9950 5250 0    50   ~ 0
+Text Label 9950 4450 0    50   ~ 0
 e
 Wire Wire Line
 	9250 3050 9500 3050
-Text Label 9500 4550 2    50   ~ 0
+Text Label 9500 4150 2    50   ~ 0
 1G
-Text Label 9500 4250 2    50   ~ 0
+Text Label 9500 4850 2    50   ~ 0
 2G
 Text Label 9500 3050 2    50   ~ 0
 3G
@@ -896,23 +896,23 @@ Wire Wire Line
 	9500 4850 9250 4850
 Wire Wire Line
 	9500 4950 9250 4950
-Text Label 9500 4750 2    50   ~ 0
-a
-Text Label 9500 4650 2    50   ~ 0
-b
-Text Label 9500 4450 2    50   ~ 0
-c
 Text Label 9500 4350 2    50   ~ 0
+a
+Text Label 9500 4450 2    50   ~ 0
+b
+Text Label 9500 4550 2    50   ~ 0
+c
+Text Label 9500 4950 2    50   ~ 0
 d
-Text Label 9500 4150 2    50   ~ 0
+Text Label 9500 4750 2    50   ~ 0
 e
-Text Label 9500 4050 2    50   ~ 0
+Text Label 9500 4650 2    50   ~ 0
 f
 Text Label 9500 3150 2    50   ~ 0
 g
-Text Label 9500 4850 2    50   ~ 0
+Text Label 9500 4250 2    50   ~ 0
 S12
-Text Label 9500 4950 2    50   ~ 0
+Text Label 9500 4050 2    50   ~ 0
 S10
 Text Notes 7350 2250 0    89   ~ 0
 Pin Connection \n7-LT-44Z\n a    28\n b    27\n c    25\n d    24\n e    22\n f    21\n g    19\n 1G   30\n 1G   26\n 2G   23
@@ -1507,4 +1507,30 @@ F 3 "~" H 4800 7350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 7350 5050 7350
+Wire Wire Line
+	4200 1900 4200 2000
+$Comp
+L Device:R_Small R?
+U 1 1 5C108751
+P 5500 1900
+F 0 "R?" V 5696 1900 50  0000 C CNN
+F 1 "1k" V 5605 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5500 1900 50  0001 C CNN
+F 3 "~" H 5500 1900 50  0001 C CNN
+	1    5500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2000 5500 2100
+$Comp
+L Device:R_Small R?
+U 1 1 5C108287
+P 4200 1800
+F 0 "R?" V 4396 1800 50  0000 C CNN
+F 1 "1k" V 4305 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4200 1800 50  0001 C CNN
+F 3 "~" H 4200 1800 50  0001 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
