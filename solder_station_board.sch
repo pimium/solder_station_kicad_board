@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:solder_station_board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1493,7 +1493,7 @@ Wire Wire Line
 	6350 850  6350 1100
 Connection ~ 6350 1100
 $Comp
-L Connector:TestPoint TP1
+L solder_station_board-rescue:TestPoint-Connector TP1
 U 1 1 5BFA584B
 P 3750 950
 F 0 "TP1" H 3808 1070 50  0000 L CNN
@@ -1504,7 +1504,7 @@ F 3 "~" H 3950 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L solder_station_board-rescue:TestPoint-Connector TP2
 U 1 1 5BFA5B5B
 P 5250 1000
 F 0 "TP2" H 5308 1120 50  0000 L CNN
@@ -1515,7 +1515,7 @@ F 3 "~" H 5450 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L solder_station_board-rescue:TestPoint-Connector TP3
 U 1 1 5BFA5C52
 P 6850 1000
 F 0 "TP3" H 6908 1120 50  0000 L CNN
