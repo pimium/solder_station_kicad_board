@@ -309,17 +309,6 @@ $EndComp
 Wire Wire Line
 	1500 4450 1500 4600
 $Comp
-L solder_station_board-rescue:HV5812-SOIC-custom U7
-U 1 1 5B3862CD
-P 8650 4000
-F 0 "U7" H 8650 5175 50  0000 C CNN
-F 1 "HV5812-SOIC" H 8650 5084 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x18.7mm_P1.27mm" H 8650 4000 50  0001 C CNN
-F 3 "" H 8250 5050 50  0000 C CNN
-	1    8650 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0114
 U 1 1 5B661811
 P 4500 2850
@@ -600,43 +589,6 @@ TEMP
 Text Label 3750 4500 0    50   ~ 0
 TEMP
 $Comp
-L power:GND #PWR0123
-U 1 1 5B6969F4
-P 7950 5250
-F 0 "#PWR0123" H 7950 5000 50  0001 C CNN
-F 1 "GND" H 7955 5077 50  0000 C CNN
-F 2 "" H 7950 5250 50  0001 C CNN
-F 3 "" H 7950 5250 50  0001 C CNN
-	1    7950 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 5250 7950 4850
-Wire Wire Line
-	7950 4850 8050 4850
-$Comp
-L power:+5V #PWR0124
-U 1 1 5B698A1F
-P 7850 3700
-F 0 "#PWR0124" H 7850 3550 50  0001 C CNN
-F 1 "+5V" H 7865 3873 50  0000 C CNN
-F 2 "" H 7850 3700 50  0001 C CNN
-F 3 "" H 7850 3700 50  0001 C CNN
-	1    7850 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 3750 8050 3750
-Wire Wire Line
-	7650 3950 8050 3950
-Wire Wire Line
-	7850 3700 7850 3750
-Wire Wire Line
-	7650 3700 7650 3950
-Wire Wire Line
-	7300 3450 8050 3450
-NoConn ~ 8050 3050
-$Comp
 L solder_station_board-rescue:ISP-custom P1
 U 1 1 5B6AD88A
 P 2300 5750
@@ -709,229 +661,6 @@ Text Label 6900 3450 2    50   ~ 0
 MOSI
 Wire Wire Line
 	6900 4600 6550 4600
-$Comp
-L Connector_Generic:Conn_01x34 J4
-U 1 1 5B6C81BF
-P 10550 3950
-F 0 "J4" H 10630 3942 50  0000 L CNN
-F 1 "VFD dISPLAY" H 10300 5700 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x34_P2.54mm_Vertical_SMD_Pin1Right" H 10550 3950 50  0001 C CNN
-F 3 "~" H 10550 3950 50  0001 C CNN
-	1    10550 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 2350 9950 2350
-Text Label 9950 2350 0    50   ~ 0
-FBA
-Wire Wire Line
-	9950 5650 10350 5650
-Text Label 9950 5650 0    50   ~ 0
-FBB
-NoConn ~ 10350 2450
-NoConn ~ 10350 5550
-Wire Wire Line
-	10350 5450 9950 5450
-Wire Wire Line
-	9950 5350 10350 5350
-Text Label 9950 5350 0    50   ~ 0
-S11
-Text Label 9950 5450 0    50   ~ 0
-S10
-Wire Wire Line
-	9950 5250 10350 5250
-Text Label 9950 4850 0    50   ~ 0
-1G
-Text Label 9950 5150 0    50   ~ 0
-S12
-Wire Wire Line
-	9950 5150 10350 5150
-Wire Wire Line
-	10350 5050 9950 5050
-Wire Wire Line
-	9950 4950 10350 4950
-Text Label 9950 4950 0    50   ~ 0
-b
-Text Label 9950 5050 0    50   ~ 0
-a
-Text Label 9950 5250 0    50   ~ 0
-1G
-Wire Wire Line
-	9950 4850 10350 4850
-Wire Wire Line
-	9950 2550 10350 2550
-Wire Wire Line
-	9950 2650 10350 2650
-Wire Wire Line
-	9950 2750 10350 2750
-Wire Wire Line
-	9950 2850 10350 2850
-Wire Wire Line
-	9950 2950 10350 2950
-Wire Wire Line
-	9950 3050 10350 3050
-Wire Wire Line
-	9950 3150 10350 3150
-Wire Wire Line
-	9950 3250 10350 3250
-Wire Wire Line
-	9950 3350 10350 3350
-Wire Wire Line
-	9950 3450 10350 3450
-Wire Wire Line
-	9950 3550 10350 3550
-Wire Wire Line
-	9950 3650 10350 3650
-Wire Wire Line
-	9950 3750 10350 3750
-Wire Wire Line
-	9950 3850 10350 3850
-Wire Wire Line
-	9950 3950 10350 3950
-Wire Wire Line
-	9950 4050 10350 4050
-Wire Wire Line
-	9950 4150 10350 4150
-Wire Wire Line
-	9950 4250 10350 4250
-Wire Wire Line
-	9950 4350 10350 4350
-Wire Wire Line
-	9950 4450 10350 4450
-Wire Wire Line
-	9950 4550 10350 4550
-Wire Wire Line
-	9950 4650 10350 4650
-Wire Wire Line
-	9950 4750 10350 4750
-Text Label 9950 4750 0    50   ~ 0
-c
-Text Label 9950 4650 0    50   ~ 0
-d
-Text Label 9950 4550 0    50   ~ 0
-2G
-Text Label 9950 2550 0    50   ~ 0
-S9
-Text Label 9950 2650 0    50   ~ 0
-S8
-Text Label 9950 2750 0    50   ~ 0
-7G
-Text Label 9950 2850 0    50   ~ 0
-S7
-Text Label 9950 2950 0    50   ~ 0
-S6
-Text Label 9950 3050 0    50   ~ 0
-6G
-Text Label 9950 3150 0    50   ~ 0
-S5
-Text Label 9950 3250 0    50   ~ 0
-S4
-Text Label 9950 3350 0    50   ~ 0
-5G
-Text Label 9950 3450 0    50   ~ 0
-S3
-Text Label 9950 3550 0    50   ~ 0
-5G
-Text Label 9950 3650 0    50   ~ 0
-S2
-Text Label 9950 3750 0    50   ~ 0
-S1
-Text Label 9950 3850 0    50   ~ 0
-4G
-NoConn ~ 9950 3950
-NoConn ~ 9950 4050
-Text Label 9950 4150 0    50   ~ 0
-g
-Text Label 9950 4250 0    50   ~ 0
-3G
-Text Label 9950 4350 0    50   ~ 0
-f
-Text Label 9950 4450 0    50   ~ 0
-e
-Wire Wire Line
-	9250 3050 9500 3050
-Text Label 9500 4150 2    50   ~ 0
-1G
-Text Label 9500 4850 2    50   ~ 0
-2G
-Text Label 9500 3050 2    50   ~ 0
-3G
-Text Label 9500 3250 2    50   ~ 0
-4G
-Text Label 9500 3350 2    50   ~ 0
-5G
-Wire Wire Line
-	9500 3150 9250 3150
-Wire Wire Line
-	9500 3250 9250 3250
-Wire Wire Line
-	9500 3350 9250 3350
-Wire Wire Line
-	9500 3450 9250 3450
-Wire Wire Line
-	9500 3750 9250 3750
-Wire Wire Line
-	9500 3850 9250 3850
-Wire Wire Line
-	9500 3950 9250 3950
-Wire Wire Line
-	9500 4050 9250 4050
-Wire Wire Line
-	9500 4150 9250 4150
-Wire Wire Line
-	9500 4250 9250 4250
-Wire Wire Line
-	9500 4350 9250 4350
-Wire Wire Line
-	9500 4450 9250 4450
-Wire Wire Line
-	9500 4550 9250 4550
-Wire Wire Line
-	9500 4650 9250 4650
-Wire Wire Line
-	9500 4750 9250 4750
-Wire Wire Line
-	9500 4850 9250 4850
-Wire Wire Line
-	9500 4950 9250 4950
-Text Label 9500 4350 2    50   ~ 0
-a
-Text Label 9500 4450 2    50   ~ 0
-b
-Text Label 9500 4550 2    50   ~ 0
-c
-Text Label 9500 4950 2    50   ~ 0
-d
-Text Label 9500 4750 2    50   ~ 0
-e
-Text Label 9500 4650 2    50   ~ 0
-f
-Text Label 9500 3150 2    50   ~ 0
-g
-Text Label 9500 4250 2    50   ~ 0
-S12
-Text Label 9500 4050 2    50   ~ 0
-S10
-Text Notes 7350 2250 0    89   ~ 0
-Pin Connection \n7-LT-44Z\n a    28\n b    27\n c    25\n d    24\n e    22\n f    21\n g    19\n 1G   30\n 1G   26\n 2G   23
-Text Notes 8550 2250 0    89   ~ 0
- 3G   20\n 4G   16\n 5G   13\n 6G    8\n 7G    5\n S10  32   °C\n //S11  31 °F\n S12  29   °C\n S8    4  Kolben\n S7    6  Start Stop\n S5    9  Ofen\n S4    4  Glocke
-Text Label 9500 3950 2    50   ~ 0
-S8
-Text Label 9500 3850 2    50   ~ 0
-S7
-Text Label 9500 3450 2    50   ~ 0
-S5
-Text Label 9500 3550 2    50   ~ 0
-S4
-Wire Wire Line
-	9250 3550 9500 3550
-Wire Wire Line
-	9250 3650 9500 3650
-Text Label 9500 3650 2    50   ~ 0
-6G
-Text Label 9500 3750 2    50   ~ 0
-7G
 NoConn ~ 6550 3850
 NoConn ~ 6550 3750
 NoConn ~ 6550 3150
@@ -981,30 +710,18 @@ Wire Wire Line
 	850  5250 850  5450
 Wire Wire Line
 	850  6050 850  6250
-Text Label 7300 3450 0    50   ~ 0
-SDI
 Wire Wire Line
 	6900 4100 6550 4100
 Text Label 6900 4400 2    50   ~ 0
 SDI
-Text Label 7300 3350 0    50   ~ 0
-BLANK
 Text Label 6900 4300 2    50   ~ 0
 BLANK
 Wire Wire Line
 	6900 4400 6550 4400
-Text Label 7300 3250 0    50   ~ 0
-STROBE
-Wire Wire Line
-	7300 3250 8050 3250
 Text Label 6900 4200 2    50   ~ 0
 STROBE
 Wire Wire Line
 	6900 4300 6550 4300
-Text Label 7300 3150 0    50   ~ 0
-CLOCK
-Wire Wire Line
-	7300 3150 8050 3150
 Text Label 6900 4100 2    50   ~ 0
 CLOCK
 Wire Wire Line
@@ -1085,12 +802,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 1600 6850 1800
 NoConn ~ 6550 4500
-NoConn ~ 9950 2550
-NoConn ~ 9950 2950
-NoConn ~ 9950 3450
-NoConn ~ 9950 3650
-NoConn ~ 9950 3750
-NoConn ~ 9950 5350
 $Comp
 L Mechanical:MountingHole_Pad MH1
 U 1 1 5B5E6218
@@ -1135,14 +846,6 @@ F 3 "~" H 650 7600 50  0001 C CNN
 	1    650  7600
 	1    0    0    -1  
 $EndComp
-Text Label 10600 6150 2    50   ~ 0
-FBA
-Wire Wire Line
-	10600 6150 10300 6150
-Wire Wire Line
-	10600 6250 10300 6250
-Text Label 10600 6250 2    50   ~ 0
-FBB
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5B600371
@@ -1153,17 +856,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2950 7300 50 
 F 3 "~" H 2950 7300 50  0001 C CNN
 	1    2950 7300
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+36V #PWR0101
-U 1 1 5B600710
-P 7650 3700
-F 0 "#PWR0101" H 7650 3550 50  0001 C CNN
-F 1 "+36V" H 7665 3873 50  0000 C CNN
-F 2 "" H 7650 3700 50  0001 C CNN
-F 3 "" H 7650 3700 50  0001 C CNN
-	1    7650 3700
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+36V #PWR0102
@@ -1267,19 +959,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 7200 2500 7000
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5B63F99D
-P 10100 6250
-F 0 "J2" H 10020 5925 50  0000 C CNN
-F 1 "Conn_FB" H 10020 6016 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10100 6250 50  0001 C CNN
-F 3 "~" H 10100 6250 50  0001 C CNN
-	1    10100 6250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8050 3350 7300 3350
-$Comp
 L Connector_Generic:Conn_01x03 J8
 U 1 1 5BC2F1C2
 P 7450 4850
@@ -1338,57 +1017,6 @@ Text Label 4550 6750 0    50   ~ 0
 INP2
 Text Label 4550 6850 0    50   ~ 0
 INP3
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J7
-U 1 1 5BE0A667
-P 6200 7250
-F 0 "J7" H 6250 7467 50  0000 C CNN
-F 1 "INT_PWR" H 6250 7376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6200 7250 50  0001 C CNN
-F 3 "~" H 6200 7250 50  0001 C CNN
-	1    6200 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0132
-U 1 1 5BE175B1
-P 5900 7000
-F 0 "#PWR0132" H 5900 6850 50  0001 C CNN
-F 1 "+5V" H 5915 7173 50  0000 C CNN
-F 2 "" H 5900 7000 50  0001 C CNN
-F 3 "" H 5900 7000 50  0001 C CNN
-	1    5900 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0133
-U 1 1 5BE1C4E4
-P 6600 7550
-F 0 "#PWR0133" H 6600 7300 50  0001 C CNN
-F 1 "GND" H 6605 7377 50  0000 C CNN
-F 2 "" H 6600 7550 50  0001 C CNN
-F 3 "" H 6600 7550 50  0001 C CNN
-	1    6600 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 7000 5900 7250
-Wire Wire Line
-	5900 7350 6000 7350
-Wire Wire Line
-	6000 7250 5900 7250
-Connection ~ 5900 7250
-Wire Wire Line
-	5900 7250 5900 7350
-Wire Wire Line
-	6500 7250 6600 7250
-Wire Wire Line
-	6500 7350 6600 7350
-Wire Wire Line
-	6600 7350 6600 7550
-Wire Wire Line
-	6600 7250 6600 7350
-Connection ~ 6600 7350
 Wire Wire Line
 	4550 6750 5050 6750
 Wire Wire Line
