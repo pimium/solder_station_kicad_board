@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:solder_station_board-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1244,66 +1244,4 @@ F 3 "~" H 5250 7250 50  0001 C CNN
 	1    5250 7250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR04
-U 1 1 5CB070E5
-P 8650 5800
-F 0 "#PWR04" H 8650 5650 50  0001 C CNN
-F 1 "+5V" H 8665 5973 50  0000 C CNN
-F 2 "" H 8650 5800 50  0001 C CNN
-F 3 "" H 8650 5800 50  0001 C CNN
-	1    8650 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5CB07375
-P 8850 5900
-F 0 "R1" V 8654 5900 50  0000 C CNN
-F 1 "0" V 8745 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 8850 5900 50  0001 C CNN
-F 3 "~" H 8850 5900 50  0001 C CNN
-	1    8850 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR05
-U 1 1 5CB074F4
-P 9050 5800
-F 0 "#PWR05" H 9050 5650 50  0001 C CNN
-F 1 "+5V" H 9065 5973 50  0000 C CNN
-F 2 "" H 9050 5800 50  0001 C CNN
-F 3 "" H 9050 5800 50  0001 C CNN
-	1    9050 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5800 9050 5900
-Wire Wire Line
-	9050 5900 8950 5900
-Wire Wire Line
-	8750 5900 8650 5900
-Wire Wire Line
-	8650 5900 8650 5800
-$Comp
-L Device:R_Small R2
-U 1 1 5CB13331
-P 8850 6100
-F 0 "R2" V 8654 6100 50  0000 C CNN
-F 1 "0" V 8745 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 8850 6100 50  0001 C CNN
-F 3 "~" H 8850 6100 50  0001 C CNN
-	1    8850 6100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8950 6100 9050 6100
-Wire Wire Line
-	9050 6100 9050 5900
-Connection ~ 9050 5900
-Wire Wire Line
-	8650 5900 8650 6100
-Wire Wire Line
-	8650 6100 8750 6100
-Connection ~ 8650 5900
 $EndSCHEMATC
