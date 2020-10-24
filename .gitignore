@@ -12,6 +12,7 @@
 *.tsv
 *.xml
 # backup files
- *.bak
 
 
+*.html
+/solder_station_board
